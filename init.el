@@ -29,7 +29,7 @@
 (when (memq window-system '(mac ns x))
   (exec-path-from-shell-initialize))
 
-
+(global-auto-composition-mode t)
 (defun zilongshanren/packages-installed-p ()
   (loop for pkg in zilongshanren/packages
 	when (not (package-installed-p pkg)) do (return nil)
@@ -86,6 +86,7 @@
 (global-company-mode t)
 (setq-default cursor-type 'bar)
 (setq make-backup-files nil)
+(setq auto-save-default nil)
 (require 'org)
 (setq org-src-fontify-natively t)
 
