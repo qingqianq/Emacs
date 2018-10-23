@@ -13,4 +13,13 @@
 (global-set-key "\C-x\ \C-r" 'recentf-open-files)
 (global-set-key (kbd "<f2>") 'open-my-init-file)
 
+
+
+(global-set-key (kbd "C-c p f") 'counsel-git) ;;在当前git查找项目
+(global-set-key (kbd "C-M-\\") 'indent-region-or-buffer);; 选中后整理文件格式
+(global-set-key (kbd "s-/") 'hippie-expand) ;;提示
+(with-eval-after-load 'dired
+(define-key dired-mode-map (kbd "RET") 'dired-find-alternate-file));; dired 模式下绑定return
+
 (provide 'init-keybindings)
+

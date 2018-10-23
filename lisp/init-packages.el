@@ -15,6 +15,7 @@
 				 js2-mode
 				 exec-path-from-shell
 				 popwin
+				 reveal-in-osx-finder
 			    
 			    )  "Default packages")
 
